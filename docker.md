@@ -40,6 +40,7 @@ docker ps -a | tac
 ### Remove all stopped containers
 ```
 docker rm $(docker ps -a -q)
+docker rmi -f $(docker images -aq)
 ```
 
 ### docker login
